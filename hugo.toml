@@ -1,0 +1,57 @@
+baseURL = 'http://example.org/' 
+languageCode = 'en-us'
+theme = "JuiceBar"
+title = "MacaroniCode"
+
+[params]
+author = "Thitichot K."
+description = "My site description"
+authorImage = "/images/profile.jpeg"
+paginate = 5 
+Title = "< MacaroniCode >"
+content = "\"Spaghetti Code is good, but Macaroni Code is better.\""
+imageUrl = "/images/avatar.jpeg"
+
+# To add a new social icon 
+# More social icons can be found in JuiceBar\layouts\partials\svg.html.
+[[params.social]]
+name = "Github"
+url = "https://github.com/hotjuicew"
+
+[[params.social]]
+name = "email"
+url = "mailto:hotjuicew@outlook.com"
+[[params.social]]
+name = "instagram"
+url = "your_url"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# To add a new navigation link
+[[menu.main]]
+name = "Docs"
+url = "/post"
+[[menu.main]]
+name = "Categories"
+url = "/categories"
+[[menu.main]]
+name = "About"
+url = "/about"
+# If using the giscus commenting system
+#[params.giscus]
+#repo = "ENTER REPO HERE"
+#repoID = "ENTER REPO ID HERE"
+#category = "ENTER CATEGORY NAME HERE"
+#categoryID = "ENTER CATEGORY ID HERE"
+#mapping = "og:title"
+#reactionsEnabled = "1"
+#emitMetadata = "0"
+#inputPosition = "bottom"
+#lang = "en"
+#loading = "lazy"
+
+# Used for outputting the documentation (required).
+[outputs]
+home = ["HTML", "RSS", "JSON"]
